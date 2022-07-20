@@ -1,10 +1,12 @@
 //criando componente
-const App = () => {
-  let n1: number = 10;
-  let n2: number = 20;
+import {Header} from './componentes/Header'
 
+const App = () => {
   return (
-    <div>Multiplicar: {n1*n2}</div>
+    <div>
+      <Header/>
+      Multiplicar: 
+    </div>
 
   );
 }
