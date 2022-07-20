@@ -4,8 +4,10 @@ import {Header} from './componentes/Header'
 const App = () => {
   return (
     <div>
+      <Header title="Título da Página"/>
+      <Header title="Subtítulo da Página"/>
       <Header/>
-      Multiplicar: 
+      Ola Mundo 
     </div>
 
   );
