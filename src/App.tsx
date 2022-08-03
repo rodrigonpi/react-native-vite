@@ -7,7 +7,7 @@ const App = () => {
 
   const handleButtonClick = () => {
     setNumero(numero+3);
-    setNome(nome+1)
+    setNome('Pedro');
 
   }
 
