@@ -1,22 +1,21 @@
 import { useState } from "react";
 
 const App = () => {
-  const [numero, setNumero] = useState(0);
-  const [nome, setNome] = useState('Rodrigo')
+  const [numero, setNumero] = useState(0); 
 
+  const handleMinus = () => {
+    setNumero(numero - 1)
+  }
 
-  const handleButtonClick = () => {
-    setNumero(numero+3);
-    setNome('Pedro');
-
+  const handleMore = () => {
+    setNumero(numero+1)
   }
 
   return (
     <div>
-      O numero é: {numero}
-      O nome é: {nome}
-      <button onClick={handleButtonClick}>Clique aqui</button>
-     
+      <button onClick={handleMore}>+</button>
+      <div>{numero}</div>
+      <button onClick={handleMinus}>-</button>
     </div>
 
   );
