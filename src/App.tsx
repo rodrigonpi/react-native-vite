@@ -1,11 +1,20 @@
-const App = () => {
+import { useState } from "react";
 
-  const handleButtonClick = ()=>{
-    alert("Botao clicado!")
+const App = () => {
+  const [numero, setNumero] = useState(0);
+  const [nome, setNome] = useState('Rodrigo')
+
+
+  const handleButtonClick = () => {
+    setNumero(numero+3);
+    setNome(nome+1)
+
   }
 
   return (
     <div>
+      O numero é: {numero}
+      O nome é: {nome}
       <button onClick={handleButtonClick}>Clique aqui</button>
      
     </div>
